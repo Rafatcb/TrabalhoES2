@@ -1,0 +1,10 @@
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\bin\Debug\TrabalhoES.exe.config
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\bin\Debug\TrabalhoES.exe
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\bin\Debug\TrabalhoES.pdb
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.frmTimes.resources
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.Properties.Resources.resources
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.csproj.GenerateResource.Cache
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.exe
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.pdb
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.frmConfronto.resources
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.csprojResolveAssemblyReference.cache
