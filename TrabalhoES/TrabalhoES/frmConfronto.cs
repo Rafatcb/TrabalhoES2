@@ -16,5 +16,14 @@ namespace TrabalhoES
         {
             InitializeComponent();
         }
+
+        private void frmConfronto_Load(object sender, EventArgs e)
+        {
+
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

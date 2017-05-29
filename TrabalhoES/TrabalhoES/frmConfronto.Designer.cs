@@ -70,6 +70,7 @@
             this.Controls.Add(this.btnMD1);
             this.Name = "frmConfronto";
             this.Text = "Confronto";
+            this.Load += new System.EventHandler(this.frmConfronto_Load);
             this.ResumeLayout(false);
 
         }
