@@ -25,5 +25,41 @@ namespace TrabalhoES
         {
             Application.Exit();
         }
+
+        #region Picturbox Sair e Botão Continuar
+        private void pcbSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pcbContinuar_Click(object sender, EventArgs e)
+        {
+            //frmConfronto telaConfronto = new frmConfronto();  Colocar aqui a prox tela
+            //telaConfronto.Show();
+            //this.Hide();
+        }
+        #endregion
+
+        #region Mudar cursor na Picturebox Continuar e Sair
+        private void pcbContinuar_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void pcbContinuar_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+        }
+
+        private void pcbSair_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void pcbSair_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+        }
+        #endregion
     }
 }

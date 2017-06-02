@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="Resources\background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CS-GO-Logo.png" />
+    <None Include="Resources\Texto-Sair.png" />
+    <None Include="Resources\Texto-Continuar.png" />
+    <Content Include="Resources\Texto-VS.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

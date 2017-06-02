@@ -28,104 +28,117 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnContinuar = new System.Windows.Forms.Button();
             this.txtTime1 = new System.Windows.Forms.TextBox();
             this.txtTime2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnSair = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pcbVS = new System.Windows.Forms.PictureBox();
+            this.pcbContinuar = new System.Windows.Forms.PictureBox();
+            this.pcbSair = new System.Windows.Forms.PictureBox();
+            this.pcbLogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbVS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbContinuar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnContinuar
-            // 
-            this.btnContinuar.Location = new System.Drawing.Point(316, 405);
-            this.btnContinuar.Name = "btnContinuar";
-            this.btnContinuar.Size = new System.Drawing.Size(75, 28);
-            this.btnContinuar.TabIndex = 0;
-            this.btnContinuar.Text = "Continuar";
-            this.btnContinuar.UseVisualStyleBackColor = true;
-            this.btnContinuar.Click += new System.EventHandler(this.btnContinuar_Click);
             // 
             // txtTime1
             // 
-            this.txtTime1.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTime1.Location = new System.Drawing.Point(316, 302);
+            this.txtTime1.Font = new System.Drawing.Font("Cambria", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime1.Location = new System.Drawing.Point(281, 354);
             this.txtTime1.Name = "txtTime1";
-            this.txtTime1.Size = new System.Drawing.Size(275, 60);
-            this.txtTime1.TabIndex = 1;
-            this.txtTime1.TextChanged += new System.EventHandler(this.txtTime1_TextChanged);
+            this.txtTime1.Size = new System.Drawing.Size(285, 63);
+            this.txtTime1.TabIndex = 0;
+            this.txtTime1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTime1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtTime1_PreviewKeyDown);
             // 
             // txtTime2
             // 
-            this.txtTime2.Font = new System.Drawing.Font("Monotype Corsiva", 35.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTime2.Location = new System.Drawing.Point(712, 302);
+            this.txtTime2.Font = new System.Drawing.Font("Cambria", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTime2.Location = new System.Drawing.Point(799, 354);
             this.txtTime2.Name = "txtTime2";
-            this.txtTime2.Size = new System.Drawing.Size(275, 60);
-            this.txtTime2.TabIndex = 2;
-            this.txtTime2.TextChanged += new System.EventHandler(this.txtTime2_TextChanged);
+            this.txtTime2.Size = new System.Drawing.Size(284, 63);
+            this.txtTime2.TabIndex = 1;
+            this.txtTime2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTime2.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.txtTime2_PreviewKeyDown);
             // 
-            // label1
+            // pcbVS
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(643, 327);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "VS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.pcbVS.BackColor = System.Drawing.Color.Transparent;
+            this.pcbVS.Image = global::TrabalhoES.Properties.Resources.Texto_VS;
+            this.pcbVS.Location = new System.Drawing.Point(599, 340);
+            this.pcbVS.Name = "pcbVS";
+            this.pcbVS.Size = new System.Drawing.Size(168, 87);
+            this.pcbVS.TabIndex = 7;
+            this.pcbVS.TabStop = false;
             // 
-            // btnSair
+            // pcbContinuar
             // 
-            this.btnSair.Location = new System.Drawing.Point(1177, 641);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 28);
-            this.btnSair.TabIndex = 6;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.pcbContinuar.BackColor = System.Drawing.Color.Transparent;
+            this.pcbContinuar.Image = global::TrabalhoES.Properties.Resources.Texto_Continuar;
+            this.pcbContinuar.Location = new System.Drawing.Point(552, 520);
+            this.pcbContinuar.Name = "pcbContinuar";
+            this.pcbContinuar.Size = new System.Drawing.Size(261, 51);
+            this.pcbContinuar.TabIndex = 8;
+            this.pcbContinuar.TabStop = false;
+            this.pcbContinuar.Click += new System.EventHandler(this.pcbContinuar_Click);
+            this.pcbContinuar.MouseEnter += new System.EventHandler(this.pcbContinuar_MouseEnter);
+            this.pcbContinuar.MouseLeave += new System.EventHandler(this.pcbContinuar_MouseLeave);
             // 
-            // pictureBox1
+            // pcbSair
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::TrabalhoES.Properties.Resources.background;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1264, 681);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.pcbSair.BackColor = System.Drawing.Color.Transparent;
+            this.pcbSair.Image = global::TrabalhoES.Properties.Resources.Texto_Sair;
+            this.pcbSair.Location = new System.Drawing.Point(1163, 661);
+            this.pcbSair.Name = "pcbSair";
+            this.pcbSair.Size = new System.Drawing.Size(99, 37);
+            this.pcbSair.TabIndex = 9;
+            this.pcbSair.TabStop = false;
+            this.pcbSair.Click += new System.EventHandler(this.pcbSair_Click);
+            this.pcbSair.MouseEnter += new System.EventHandler(this.pcbSair_MouseEnter);
+            this.pcbSair.MouseLeave += new System.EventHandler(this.pcbSair_MouseLeave);
+            // 
+            // pcbLogo
+            // 
+            this.pcbLogo.BackColor = System.Drawing.Color.Transparent;
+            this.pcbLogo.Image = global::TrabalhoES.Properties.Resources.CS_GO_Logo;
+            this.pcbLogo.Location = new System.Drawing.Point(410, 50);
+            this.pcbLogo.Name = "pcbLogo";
+            this.pcbLogo.Size = new System.Drawing.Size(546, 126);
+            this.pcbLogo.TabIndex = 10;
+            this.pcbLogo.TabStop = false;
             // 
             // frmTimes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.btnSair);
-            this.Controls.Add(this.label1);
+            this.BackgroundImage = global::TrabalhoES.Properties.Resources.background;
+            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.pcbLogo);
+            this.Controls.Add(this.pcbSair);
+            this.Controls.Add(this.pcbContinuar);
+            this.Controls.Add(this.pcbVS);
             this.Controls.Add(this.txtTime2);
             this.Controls.Add(this.txtTime1);
-            this.Controls.Add(this.btnContinuar);
-            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTimes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Times";
             this.Load += new System.EventHandler(this.frmTimes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbVS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbContinuar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnContinuar;
         private System.Windows.Forms.TextBox txtTime1;
         private System.Windows.Forms.TextBox txtTime2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnSair;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pcbVS;
+        private System.Windows.Forms.PictureBox pcbContinuar;
+        private System.Windows.Forms.PictureBox pcbSair;
+        private System.Windows.Forms.PictureBox pcbLogo;
     }
 }
 
