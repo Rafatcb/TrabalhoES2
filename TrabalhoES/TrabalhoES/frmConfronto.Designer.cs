@@ -87,6 +87,7 @@
             this.pcbMD3.Size = new System.Drawing.Size(507, 65);
             this.pcbMD3.TabIndex = 14;
             this.pcbMD3.TabStop = false;
+            this.pcbMD3.Click += new System.EventHandler(this.pcbMD3_Click);
             this.pcbMD3.MouseEnter += new System.EventHandler(this.pcbMD3_MouseEnter);
             this.pcbMD3.MouseLeave += new System.EventHandler(this.pcbMD3_MouseLeave);
             // 
@@ -99,6 +100,7 @@
             this.pcbMD5.Size = new System.Drawing.Size(507, 65);
             this.pcbMD5.TabIndex = 15;
             this.pcbMD5.TabStop = false;
+            this.pcbMD5.Click += new System.EventHandler(this.pcbMD5_Click);
             this.pcbMD5.MouseEnter += new System.EventHandler(this.pcbMD5_MouseEnter);
             this.pcbMD5.MouseLeave += new System.EventHandler(this.pcbMD5_MouseLeave);
             // 

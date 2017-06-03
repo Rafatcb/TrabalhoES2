@@ -34,16 +34,20 @@
             this.pcbContinuar = new System.Windows.Forms.PictureBox();
             this.pcbSair = new System.Windows.Forms.PictureBox();
             this.pcbLogo = new System.Windows.Forms.PictureBox();
+            this.pcbTime1 = new System.Windows.Forms.PictureBox();
+            this.pcbTime2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbVS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbContinuar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTime1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTime2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTime1
             // 
             this.txtTime1.Font = new System.Drawing.Font("Cambria", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTime1.Location = new System.Drawing.Point(281, 354);
+            this.txtTime1.Location = new System.Drawing.Point(281, 374);
             this.txtTime1.MaxLength = 10;
             this.txtTime1.Name = "txtTime1";
             this.txtTime1.Size = new System.Drawing.Size(285, 63);
@@ -54,7 +58,7 @@
             // txtTime2
             // 
             this.txtTime2.Font = new System.Drawing.Font("Cambria", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTime2.Location = new System.Drawing.Point(799, 354);
+            this.txtTime2.Location = new System.Drawing.Point(798, 374);
             this.txtTime2.Name = "txtTime2";
             this.txtTime2.Size = new System.Drawing.Size(284, 63);
             this.txtTime2.TabIndex = 1;
@@ -107,6 +111,26 @@
             this.pcbLogo.TabIndex = 10;
             this.pcbLogo.TabStop = false;
             // 
+            // pcbTime1
+            // 
+            this.pcbTime1.BackColor = System.Drawing.Color.Transparent;
+            this.pcbTime1.Image = global::TrabalhoES.Properties.Resources.Texto_Time1;
+            this.pcbTime1.Location = new System.Drawing.Point(285, 262);
+            this.pcbTime1.Name = "pcbTime1";
+            this.pcbTime1.Size = new System.Drawing.Size(277, 106);
+            this.pcbTime1.TabIndex = 11;
+            this.pcbTime1.TabStop = false;
+            // 
+            // pcbTime2
+            // 
+            this.pcbTime2.BackColor = System.Drawing.Color.Transparent;
+            this.pcbTime2.Image = global::TrabalhoES.Properties.Resources.Texto_Time2;
+            this.pcbTime2.Location = new System.Drawing.Point(801, 262);
+            this.pcbTime2.Name = "pcbTime2";
+            this.pcbTime2.Size = new System.Drawing.Size(277, 106);
+            this.pcbTime2.TabIndex = 12;
+            this.pcbTime2.TabStop = false;
+            // 
             // frmTimes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,6 +138,8 @@
             this.BackgroundImage = global::TrabalhoES.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.pcbTime2);
+            this.Controls.Add(this.pcbTime1);
             this.Controls.Add(this.pcbLogo);
             this.Controls.Add(this.pcbSair);
             this.Controls.Add(this.pcbContinuar);
@@ -129,6 +155,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbContinuar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTime1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbTime2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,6 +169,8 @@
         private System.Windows.Forms.PictureBox pcbContinuar;
         private System.Windows.Forms.PictureBox pcbSair;
         private System.Windows.Forms.PictureBox pcbLogo;
+        private System.Windows.Forms.PictureBox pcbTime1;
+        private System.Windows.Forms.PictureBox pcbTime2;
     }
 }
 

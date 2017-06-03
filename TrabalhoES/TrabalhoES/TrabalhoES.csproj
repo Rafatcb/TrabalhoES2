@@ -66,6 +66,18 @@
     <Compile Include="frmResultadoMD1.Designer.cs">
       <DependentUpon>frmResultadoMD1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmResultadoMD3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultadoMD3.Designer.cs">
+      <DependentUpon>frmResultadoMD3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultadoMD5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultadoMD5.Designer.cs">
+      <DependentUpon>frmResultadoMD5.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTimes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmResultadoMD1.resx">
       <DependentUpon>frmResultadoMD1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultadoMD3.resx">
+      <DependentUpon>frmResultadoMD3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultadoMD5.resx">
+      <DependentUpon>frmResultadoMD5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimes.resx">
       <DependentUpon>frmTimes.cs</DependentUpon>
@@ -154,6 +172,7 @@
     <None Include="Resources\Texto-Veto61.jpg" />
     <None Include="Resources\Texto-Veto62.jpg" />
     <None Include="Resources\Texto-Veto32.jpg" />
+    <None Include="Resources\Texto-MapasConfronto.png" />
     <Content Include="Resources\Texto-VS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

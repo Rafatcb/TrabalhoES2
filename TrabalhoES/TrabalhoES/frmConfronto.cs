@@ -25,7 +25,11 @@ namespace TrabalhoES
         #region Picturbox Sair e Continuar
         private void pcbSair_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            var result = MessageBox.Show("Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void pcbVoltar_Click(object sender, EventArgs e)
@@ -101,6 +105,23 @@ namespace TrabalhoES
         #region [CLICK] Melhor de
         private void pcbMD1_Click(object sender, EventArgs e)
         {
+            Resources.Global.melhorDe = 1;
+            frmMapas telaMapas = new frmMapas();
+            telaMapas.Show();
+            this.Hide();
+        }
+
+        private void pcbMD3_Click(object sender, EventArgs e)
+        {
+            Resources.Global.melhorDe = 3;
+            frmMapas telaMapas = new frmMapas();
+            telaMapas.Show();
+            this.Hide();
+        }
+
+        private void pcbMD5_Click(object sender, EventArgs e)
+        {
+            Resources.Global.melhorDe = 5;
             frmMapas telaMapas = new frmMapas();
             telaMapas.Show();
             this.Hide();

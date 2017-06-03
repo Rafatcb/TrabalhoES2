@@ -223,6 +223,16 @@ namespace TrabalhoES.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Texto_MapasConfronto {
+            get {
+                object obj = ResourceManager.GetObject("Texto-MapasConfronto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Texto_MD1 {
             get {
                 object obj = ResourceManager.GetObject("Texto-MD1", resourceCulture);

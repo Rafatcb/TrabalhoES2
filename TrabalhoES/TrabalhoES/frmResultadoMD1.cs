@@ -22,10 +22,10 @@ namespace TrabalhoES
             Application.Exit();
         }
 
+        #region FormLoad
         private void frmResultadoMD1_Load(object sender, EventArgs e)
         {
-            // Fazer switch para mudar o background da pcbMapa de acordo com o vencedor
-            switch (Resources.Global.mapaVencedor)
+            switch (Resources.Global.mapaVencedor[0])
             {
                 case 0:
                     pcbMapa.BackgroundImage = Properties.Resources.Cache;
@@ -50,6 +50,7 @@ namespace TrabalhoES
                     break;
             }
         }
+        #endregion
 
         #region Mudar Cursor na Picturebox Sair
         private void pcbSair_MouseEnter(object sender, EventArgs e)
@@ -66,7 +67,11 @@ namespace TrabalhoES
         #region [CLICK] Sair
         private void pcbSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            var result = MessageBox.Show("Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
         #endregion
     }
