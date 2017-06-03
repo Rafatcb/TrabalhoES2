@@ -8,7 +8,9 @@ namespace TrabalhoES.Resources
 {
     class Global
     {
-        public static short[] mapas = new short[] { 0, 0, 0, 0, 0, 0, 0 };
-        public static short mapaVencedor;// 0 - Normal; 1 - Veto
+        public static short[] mapas = new short[] { 0, 0, 0, 0, 0, 0, 0 }; // 0 - Normal; 1 - Veto
+        public static short[] mapaVencedor = new short[5];
+        public static short melhorDe, sair = 0;
+        public static string time1, time2;
     }
 }

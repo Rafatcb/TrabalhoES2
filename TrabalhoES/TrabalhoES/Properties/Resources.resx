@@ -124,6 +124,9 @@
   <data name="Texto-Time2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-Time2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Texto-Veto32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-Veto32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Nuke" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Nuke.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,6 +136,9 @@
   <data name="Texto-MD3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-MD3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Texto-Veto41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-Veto41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Texto-Veto21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-Veto21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -141,6 +147,9 @@
   </data>
   <data name="Texto-Continuar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-Continuar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Texto-Veto62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-Veto62.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -153,6 +162,12 @@
   </data>
   <data name="Texto-MapaConfronto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-MapaConfronto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Texto-Veto52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-Veto52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Texto-Veto31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-Veto31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cobblestone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cobblestone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -171,6 +186,12 @@
   </data>
   <data name="Texto-Veto22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-Veto22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Texto-Veto42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-Veto42.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Texto-Veto51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-Veto51.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Texto-Time1-glow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-Time1-glow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,6 +223,9 @@
   <data name="Cache-Veto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cache-Veto.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Texto-Veto61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-Veto61.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Texto-Sair" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-Sair.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -220,28 +244,7 @@
   <data name="Texto-Veto02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Texto-Veto02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Texto-Veto31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Texto-Veto31.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Texto-Veto41" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Texto-Veto41.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Texto-Veto42" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Texto-Veto42.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Texto-Veto51" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Texto-Veto51.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Texto-Veto52" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Texto-Veto52.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Texto-Veto61" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Texto-Veto61.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Texto-Veto62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Texto-Veto62.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Texto-Veto32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Texto-Veto32.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Texto-MapasConfronto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Texto-MapasConfronto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

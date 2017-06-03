@@ -24,14 +24,28 @@ namespace TrabalhoES
         #region [CLICK] Sair e Continuar
         private void pcbSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            var result = MessageBox.Show("Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                Resources.Global.sair = 1;
+                this.Close();
+            }
         }
 
         private void pcbContinuar_Click(object sender, EventArgs e)
         {
-            frmConfronto telaConfronto = new frmConfronto();
-            telaConfronto.Show();
-            this.Hide();
+            if ((txtTime1.Text == "") || (txtTime2.Text == ""))
+            {
+                MessageBox.Show("Insira o nome dos dois times", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button1);
+            }
+            else
+            {
+                Resources.Global.time1 = txtTime1.Text;
+                Resources.Global.time2 = txtTime2.Text;
+                frmConfronto telaConfronto = new frmConfronto();
+                telaConfronto.Show();
+                this.Hide();
+            }
         }
         #endregion
 

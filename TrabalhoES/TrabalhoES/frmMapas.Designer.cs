@@ -58,6 +58,8 @@
             this.pcbVeto42 = new System.Windows.Forms.PictureBox();
             this.pcbVeto62 = new System.Windows.Forms.PictureBox();
             this.tmrEspera = new System.Windows.Forms.Timer(this.components);
+            this.lblTime1 = new System.Windows.Forms.Label();
+            this.lblTime2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNuke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbOverpass)).BeginInit();
@@ -408,6 +410,30 @@
             this.tmrEspera.Interval = 1500;
             this.tmrEspera.Tick += new System.EventHandler(this.tmrEspera_Tick);
             // 
+            // lblTime1
+            // 
+            this.lblTime1.AutoSize = true;
+            this.lblTime1.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime1.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime1.Location = new System.Drawing.Point(634, 141);
+            this.lblTime1.Name = "lblTime1";
+            this.lblTime1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTime1.Size = new System.Drawing.Size(107, 37);
+            this.lblTime1.TabIndex = 45;
+            this.lblTime1.Text = "TESTE";
+            // 
+            // lblTime2
+            // 
+            this.lblTime2.AutoSize = true;
+            this.lblTime2.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime2.Font = new System.Drawing.Font("Cambria", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime2.Location = new System.Drawing.Point(634, 596);
+            this.lblTime2.Name = "lblTime2";
+            this.lblTime2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblTime2.Size = new System.Drawing.Size(107, 37);
+            this.lblTime2.TabIndex = 46;
+            this.lblTime2.Text = "TESTE";
+            // 
             // frmMapas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -415,6 +441,8 @@
             this.BackgroundImage = global::TrabalhoES.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.lblTime2);
+            this.Controls.Add(this.lblTime1);
             this.Controls.Add(this.pcbVeto62);
             this.Controls.Add(this.pcbVeto42);
             this.Controls.Add(this.pcbVeto41);
@@ -508,5 +536,7 @@
         private System.Windows.Forms.PictureBox pcbVeto42;
         private System.Windows.Forms.PictureBox pcbVeto62;
         private System.Windows.Forms.Timer tmrEspera;
+        private System.Windows.Forms.Label lblTime1;
+        private System.Windows.Forms.Label lblTime2;
     }
 }

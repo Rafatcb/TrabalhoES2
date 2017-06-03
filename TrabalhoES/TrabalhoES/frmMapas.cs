@@ -24,19 +24,34 @@ namespace TrabalhoES
             Application.Exit();
         }
 
+        /*  ID DOS MAPAS
+         *  Cache = 0
+         *  Cobblestone = 1
+         *  Inferno = 2
+         *  Mirage = 3
+         *  Nuke = 4
+         *  Overpass = 5
+         *  Train = 6     */
+
+        short md = Resources.Global.melhorDe; // Variavel Global do Form
+
+        #region Form Load
         private void frmMapas_Load(object sender, EventArgs e)
         {
             TrocarTime();
             tmrVeto.Enabled = true;
+            lblTime1.Text = Resources.Global.time1;
+            this.lblTime1.Location = new Point(
+                (this.Width - lblTime1.Size.Width) / 2, // X
+                this.lblTime1.Location.Y // Y
+            );
+            lblTime2.Text = Resources.Global.time2;
+            this.lblTime2.Location = new Point(
+                (this.Width - lblTime2.Size.Width) / 2, // X
+                this.lblTime2.Location.Y // Y
+            );
         }
-
-        /*  Cache = 0
-            Cobblestone = 1
-            Inferno = 2
-            Mirage = 3
-            Nuke = 4
-            Overpass = 5
-            Train = 6  */
+        #endregion
 
         #region [PROCEDURE] Troca o time "da vez"
         void TrocarTime()
@@ -59,42 +74,35 @@ namespace TrabalhoES
         #region [PROCEDURE] Verifica se terminou todos os vetos
         void Veto(short idClicada)
         {
-            short i = 0;
+            short i = 0, qtd = 0;
             mapasVetados++;
             Resources.Global.mapas[idClicada] = 1;
             AjustarpcbVeto(idClicada);
 
-            if (mapasVetados == 6)
+            if (mapasVetados == 7 - md)
             {
-                tmrEspera.Enabled = true;
-                while (Resources.Global.mapas[i] == 1)
-                    i++;
-                Resources.Global.mapaVencedor = i;
-                switch (i)
-                {
-                    case 0:
-                        pcbCache.Enabled = false;
-                        break;
-                    case 1:
-                        pcbCobblestone.Enabled = false;
-                        break;
-                    case 2:
-                        pcbInferno.Enabled = false;
-                        break;
-                    case 3:
-                        pcbMirage.Enabled = false;
-                        break;
-                    case 4:
-                        pcbNuke.Enabled = false;
-                        break;
-                    case 5:
-                        pcbOverpass.Enabled = false;
-                        break;
-                    case 6:
-                        pcbTime1.Enabled = false;
-                        break;
-                }
+                #region Desabilitando as PictureBox dos Mapas
+                pcbCache.Enabled = false;
+                pcbCobblestone.Enabled = false;
+                pcbInferno.Enabled = false;
+                pcbMirage.Enabled = false;
+                pcbNuke.Enabled = false;
+                pcbOverpass.Enabled = false;
+                pcbTrain.Enabled = false;
+                pcbTime1.Enabled = false;
+                #endregion
+
                 tmrVeto.Enabled = false;
+                tmrEspera.Enabled = true;
+                while (qtd < md)
+                {
+                    if (Resources.Global.mapas[i] == 0)
+                    {
+                        Resources.Global.mapaVencedor[qtd] = i;
+                        qtd++;
+                    }
+                    i++;
+                }
             }
             else
             {
@@ -106,9 +114,21 @@ namespace TrabalhoES
 
         private void tmrEspera_Tick(object sender, EventArgs e)
         {
-            
-            frmResultadoMD1 telaResultado = new frmResultadoMD1();
-            telaResultado.Show();
+            if (md == 1)
+            {
+                frmResultadoMD1 telaResultado = new frmResultadoMD1();
+                telaResultado.Show();
+            }
+            else if (md == 3)
+            {
+                frmResultadoMD3 telaResultado = new frmResultadoMD3();
+                telaResultado.Show();
+            }
+            else
+            {
+                frmResultadoMD5 telaResultado = new frmResultadoMD5();
+                telaResultado.Show();
+            }
             this.Hide();
             tmrEspera.Enabled = false;
         }
@@ -190,7 +210,11 @@ namespace TrabalhoES
         #region [CLICK] Sair
         private void pcbSair_Click(object sender, EventArgs e)
         {
-            this.Close();
+            var result = MessageBox.Show("Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
         #endregion
 
