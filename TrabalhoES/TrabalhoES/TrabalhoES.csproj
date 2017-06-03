@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{0D4246B7-0C63-441B-96BA-FF2BB1CF260C}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <OutputType>Exe</OutputType>
     <RootNamespace>TrabalhoES</RootNamespace>
     <AssemblyName>TrabalhoES</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,6 +54,18 @@
     <Compile Include="frmConfronto.Designer.cs">
       <DependentUpon>frmConfronto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMapas.Designer.cs">
+      <DependentUpon>frmMapas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResultadoMD1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResultadoMD1.Designer.cs">
+      <DependentUpon>frmResultadoMD1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTimes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,22 +74,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Global.cs" />
     <EmbeddedResource Include="frmConfronto.resx">
       <DependentUpon>frmConfronto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMapas.resx">
+      <DependentUpon>frmMapas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResultadoMD1.resx">
+      <DependentUpon>frmResultadoMD1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTimes.resx">
       <DependentUpon>frmTimes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,16 +110,50 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Imagens\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\background.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Train-Veto.jpg" />
+    <None Include="Resources\Train.jpg" />
     <None Include="Resources\CS-GO-Logo.png" />
     <None Include="Resources\Texto-Sair.png" />
     <None Include="Resources\Texto-Continuar.png" />
+    <None Include="Resources\Texto-MD1.png" />
+    <None Include="Resources\Texto-MD3.png" />
+    <None Include="Resources\Texto-MD5.png" />
+    <None Include="Resources\Texto-Voltar.png" />
+    <None Include="Resources\Texto-Time1.png" />
+    <None Include="Resources\Texto-Time1-glow.png" />
+    <None Include="Resources\Texto-Time2-glow.png" />
+    <None Include="Resources\Texto-Time2.png" />
+    <None Include="Resources\Cache.jpg" />
+    <None Include="Resources\Cache-Veto.jpg" />
+    <None Include="Resources\Cobblestone.jpg" />
+    <None Include="Resources\Cobblestone-Veto.jpg" />
+    <None Include="Resources\Inferno.jpg" />
+    <None Include="Resources\Inferno-Veto.jpg" />
+    <None Include="Resources\Mirage.jpg" />
+    <None Include="Resources\Mirage-Veto.jpg" />
+    <None Include="Resources\Nuke.jpg" />
+    <None Include="Resources\Nuke-Veto.jpg" />
+    <None Include="Resources\Overpass.jpg" />
+    <None Include="Resources\Overpass-Veto.jpg" />
+    <None Include="Resources\Texto-Veto01.jpg" />
+    <None Include="Resources\Texto-Veto02.jpg" />
+    <None Include="Resources\Texto-Veto12.jpg" />
+    <None Include="Resources\Texto-Veto11.jpg" />
+    <None Include="Resources\Texto-Veto21.jpg" />
+    <None Include="Resources\Texto-Veto22.jpg" />
+    <None Include="Resources\Texto-Veto31.jpg" />
+    <None Include="Resources\Texto-Veto41.jpg" />
+    <None Include="Resources\Texto-Veto42.jpg" />
+    <None Include="Resources\Texto-Veto51.jpg" />
+    <None Include="Resources\Texto-Veto52.jpg" />
+    <None Include="Resources\Texto-Veto61.jpg" />
+    <None Include="Resources\Texto-Veto62.jpg" />
+    <None Include="Resources\Texto-Veto32.jpg" />
     <Content Include="Resources\Texto-VS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

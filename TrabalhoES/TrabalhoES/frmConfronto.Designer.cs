@@ -28,43 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnMD1 = new System.Windows.Forms.Button();
-            this.btnMD3 = new System.Windows.Forms.Button();
-            this.btnMD5 = new System.Windows.Forms.Button();
             this.pcbSair = new System.Windows.Forms.PictureBox();
-            this.pcbContinuar = new System.Windows.Forms.PictureBox();
             this.pcbLogo = new System.Windows.Forms.PictureBox();
+            this.pcbMD1 = new System.Windows.Forms.PictureBox();
+            this.pcbMD3 = new System.Windows.Forms.PictureBox();
+            this.pcbMD5 = new System.Windows.Forms.PictureBox();
+            this.pcbVoltar = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbContinuar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMD1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMD3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMD5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbVoltar)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnMD1
-            // 
-            this.btnMD1.Location = new System.Drawing.Point(185, 26);
-            this.btnMD1.Name = "btnMD1";
-            this.btnMD1.Size = new System.Drawing.Size(95, 28);
-            this.btnMD1.TabIndex = 0;
-            this.btnMD1.Text = "Melhor de 1";
-            this.btnMD1.UseVisualStyleBackColor = true;
-            // 
-            // btnMD3
-            // 
-            this.btnMD3.Location = new System.Drawing.Point(185, 60);
-            this.btnMD3.Name = "btnMD3";
-            this.btnMD3.Size = new System.Drawing.Size(95, 28);
-            this.btnMD3.TabIndex = 1;
-            this.btnMD3.Text = "Melhor de 3";
-            this.btnMD3.UseVisualStyleBackColor = true;
-            // 
-            // btnMD5
-            // 
-            this.btnMD5.Location = new System.Drawing.Point(185, 94);
-            this.btnMD5.Name = "btnMD5";
-            this.btnMD5.Size = new System.Drawing.Size(95, 28);
-            this.btnMD5.TabIndex = 2;
-            this.btnMD5.Text = "Melhor de 5";
-            this.btnMD5.UseVisualStyleBackColor = true;
             // 
             // pcbSair
             // 
@@ -79,19 +55,6 @@
             this.pcbSair.MouseEnter += new System.EventHandler(this.pcbSair_MouseEnter);
             this.pcbSair.MouseLeave += new System.EventHandler(this.pcbSair_MouseLeave);
             // 
-            // pcbContinuar
-            // 
-            this.pcbContinuar.BackColor = System.Drawing.Color.Transparent;
-            this.pcbContinuar.Image = global::TrabalhoES.Properties.Resources.Texto_Continuar;
-            this.pcbContinuar.Location = new System.Drawing.Point(552, 520);
-            this.pcbContinuar.Name = "pcbContinuar";
-            this.pcbContinuar.Size = new System.Drawing.Size(261, 51);
-            this.pcbContinuar.TabIndex = 10;
-            this.pcbContinuar.TabStop = false;
-            this.pcbContinuar.Click += new System.EventHandler(this.pcbContinuar_Click);
-            this.pcbContinuar.MouseEnter += new System.EventHandler(this.pcbContinuar_MouseEnter);
-            this.pcbContinuar.MouseLeave += new System.EventHandler(this.pcbContinuar_MouseLeave);
-            // 
             // pcbLogo
             // 
             this.pcbLogo.BackColor = System.Drawing.Color.Transparent;
@@ -102,6 +65,56 @@
             this.pcbLogo.TabIndex = 12;
             this.pcbLogo.TabStop = false;
             // 
+            // pcbMD1
+            // 
+            this.pcbMD1.BackColor = System.Drawing.Color.Transparent;
+            this.pcbMD1.Image = global::TrabalhoES.Properties.Resources.Texto_MD1;
+            this.pcbMD1.Location = new System.Drawing.Point(438, 305);
+            this.pcbMD1.Name = "pcbMD1";
+            this.pcbMD1.Size = new System.Drawing.Size(489, 65);
+            this.pcbMD1.TabIndex = 13;
+            this.pcbMD1.TabStop = false;
+            this.pcbMD1.Click += new System.EventHandler(this.pcbMD1_Click);
+            this.pcbMD1.MouseEnter += new System.EventHandler(this.pcbMD1_MouseEnter);
+            this.pcbMD1.MouseLeave += new System.EventHandler(this.pcbMD1_MouseLeave);
+            // 
+            // pcbMD3
+            // 
+            this.pcbMD3.BackColor = System.Drawing.Color.Transparent;
+            this.pcbMD3.Image = global::TrabalhoES.Properties.Resources.Texto_MD3;
+            this.pcbMD3.Location = new System.Drawing.Point(429, 405);
+            this.pcbMD3.Name = "pcbMD3";
+            this.pcbMD3.Size = new System.Drawing.Size(507, 65);
+            this.pcbMD3.TabIndex = 14;
+            this.pcbMD3.TabStop = false;
+            this.pcbMD3.MouseEnter += new System.EventHandler(this.pcbMD3_MouseEnter);
+            this.pcbMD3.MouseLeave += new System.EventHandler(this.pcbMD3_MouseLeave);
+            // 
+            // pcbMD5
+            // 
+            this.pcbMD5.BackColor = System.Drawing.Color.Transparent;
+            this.pcbMD5.Image = global::TrabalhoES.Properties.Resources.Texto_MD5;
+            this.pcbMD5.Location = new System.Drawing.Point(430, 505);
+            this.pcbMD5.Name = "pcbMD5";
+            this.pcbMD5.Size = new System.Drawing.Size(507, 65);
+            this.pcbMD5.TabIndex = 15;
+            this.pcbMD5.TabStop = false;
+            this.pcbMD5.MouseEnter += new System.EventHandler(this.pcbMD5_MouseEnter);
+            this.pcbMD5.MouseLeave += new System.EventHandler(this.pcbMD5_MouseLeave);
+            // 
+            // pcbVoltar
+            // 
+            this.pcbVoltar.BackColor = System.Drawing.Color.Transparent;
+            this.pcbVoltar.Image = global::TrabalhoES.Properties.Resources.Texto_Voltar;
+            this.pcbVoltar.Location = new System.Drawing.Point(99, 661);
+            this.pcbVoltar.Name = "pcbVoltar";
+            this.pcbVoltar.Size = new System.Drawing.Size(154, 37);
+            this.pcbVoltar.TabIndex = 16;
+            this.pcbVoltar.TabStop = false;
+            this.pcbVoltar.Click += new System.EventHandler(this.pcbVoltar_Click);
+            this.pcbVoltar.MouseEnter += new System.EventHandler(this.pcbVoltar_MouseEnter);
+            this.pcbVoltar.MouseLeave += new System.EventHandler(this.pcbVoltar_MouseLeave);
+            // 
             // frmConfronto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -109,31 +122,33 @@
             this.BackgroundImage = global::TrabalhoES.Properties.Resources.background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.pcbVoltar);
+            this.Controls.Add(this.pcbMD5);
+            this.Controls.Add(this.pcbMD3);
+            this.Controls.Add(this.pcbMD1);
             this.Controls.Add(this.pcbLogo);
             this.Controls.Add(this.pcbSair);
-            this.Controls.Add(this.pcbContinuar);
-            this.Controls.Add(this.btnMD5);
-            this.Controls.Add(this.btnMD3);
-            this.Controls.Add(this.btnMD1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConfronto";
             this.Text = "Confronto";
-            this.Load += new System.EventHandler(this.frmConfronto_Load);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbContinuar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMD1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMD3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbMD5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbVoltar)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnMD1;
-        private System.Windows.Forms.Button btnMD3;
-        private System.Windows.Forms.Button btnMD5;
         private System.Windows.Forms.PictureBox pcbSair;
-        private System.Windows.Forms.PictureBox pcbContinuar;
         private System.Windows.Forms.PictureBox pcbLogo;
+        private System.Windows.Forms.PictureBox pcbMD1;
+        private System.Windows.Forms.PictureBox pcbMD3;
+        private System.Windows.Forms.PictureBox pcbMD5;
+        private System.Windows.Forms.PictureBox pcbVoltar;
     }
 }
 

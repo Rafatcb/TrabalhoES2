@@ -28,3 +28,5 @@ C:\Users\jgpam\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.Properties
 C:\Users\jgpam\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.csproj.GenerateResource.Cache
 C:\Users\jgpam\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.exe
 C:\Users\jgpam\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.pdb
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.frmMapas.resources
+C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.frmResultadoMD1.resources

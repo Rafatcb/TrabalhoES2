@@ -16,17 +16,15 @@ namespace TrabalhoES
         {
             InitializeComponent();
         }
-
-        private void frmTimes_Load(object sender, EventArgs e)
-        {
-            FormBorderStyle = FormBorderStyle.None;
-            WindowState = FormWindowState.Maximized;
-        }
-
-        #region Picturbox Sair e Botão Continuar
-        private void pcbSair_Click(object sender, EventArgs e)
+        protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        #region [CLICK] Sair e Continuar
+        private void pcbSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void pcbContinuar_Click(object sender, EventArgs e)

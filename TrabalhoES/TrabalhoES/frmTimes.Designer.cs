@@ -44,6 +44,7 @@
             // 
             this.txtTime1.Font = new System.Drawing.Font("Cambria", 35.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTime1.Location = new System.Drawing.Point(281, 354);
+            this.txtTime1.MaxLength = 10;
             this.txtTime1.Name = "txtTime1";
             this.txtTime1.Size = new System.Drawing.Size(285, 63);
             this.txtTime1.TabIndex = 0;
@@ -111,6 +112,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrabalhoES.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.pcbLogo);
             this.Controls.Add(this.pcbSair);
@@ -122,7 +124,7 @@
             this.Name = "frmTimes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Times";
-            this.Load += new System.EventHandler(this.frmTimes_Load);
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pcbVS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbContinuar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).EndInit();

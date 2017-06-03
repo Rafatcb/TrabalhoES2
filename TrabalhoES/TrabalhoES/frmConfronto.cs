@@ -17,30 +17,26 @@ namespace TrabalhoES
             InitializeComponent();
         }
 
-        private void frmConfronto_Load(object sender, EventArgs e)
-        {
-
-        }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
-        #region Picturbox Sair e Botão Continuar
+        #region Picturbox Sair e Continuar
         private void pcbSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void pcbContinuar_Click(object sender, EventArgs e)
+        private void pcbVoltar_Click(object sender, EventArgs e)
         {
-            //frmConfronto telaConfronto = new frmConfronto();  Colocar aqui a prox tela
-            //telaConfronto.Show();
-            //this.Hide();
+            frmTimes telaTimes = new frmTimes();
+            telaTimes.Show();
+            this.Hide();
         }
         #endregion
 
-        #region Mudar cursor na Picturebox Continuar e Sair
+        #region Mudar cursor na Picturebox Continuar, MD1, MD3, MD5 e Sair
         private void pcbContinuar_MouseEnter(object sender, EventArgs e)
         {
             Cursor = Cursors.Hand;
@@ -59,6 +55,55 @@ namespace TrabalhoES
         private void pcbSair_MouseLeave(object sender, EventArgs e)
         {
             Cursor = Cursors.Arrow;
+        }
+
+        private void pcbMD1_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void pcbMD1_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+        }
+
+        private void pcbMD3_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void pcbMD3_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+        }
+
+        private void pcbMD5_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void pcbMD5_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+        }
+
+        private void pcbVoltar_MouseEnter(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Hand;
+        }
+
+        private void pcbVoltar_MouseLeave(object sender, EventArgs e)
+        {
+            Cursor = Cursors.Arrow;
+        }
+        #endregion
+
+        #region [CLICK] Melhor de
+        private void pcbMD1_Click(object sender, EventArgs e)
+        {
+            frmMapas telaMapas = new frmMapas();
+            telaMapas.Show();
+            this.Hide();
         }
         #endregion
     }
