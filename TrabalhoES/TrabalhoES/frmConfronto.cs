@@ -36,7 +36,7 @@ namespace TrabalhoES
         {
             frmTimes telaTimes = new frmTimes();
             telaTimes.Show();
-            this.Hide();
+            tmrHide.Enabled = true;
         }
         #endregion
 
@@ -108,7 +108,7 @@ namespace TrabalhoES
             Resources.Global.melhorDe = 1;
             frmMapas telaMapas = new frmMapas();
             telaMapas.Show();
-            this.Hide();
+            tmrHide.Enabled = true;
         }
 
         private void pcbMD3_Click(object sender, EventArgs e)
@@ -116,7 +116,7 @@ namespace TrabalhoES
             Resources.Global.melhorDe = 3;
             frmMapas telaMapas = new frmMapas();
             telaMapas.Show();
-            this.Hide();
+            tmrHide.Enabled = true;
         }
 
         private void pcbMD5_Click(object sender, EventArgs e)
@@ -124,8 +124,14 @@ namespace TrabalhoES
             Resources.Global.melhorDe = 5;
             frmMapas telaMapas = new frmMapas();
             telaMapas.Show();
-            this.Hide();
+            tmrHide.Enabled = true;
         }
         #endregion
+
+        private void tmrHide_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
+            tmrHide.Enabled = false;
+        }
     }
 }

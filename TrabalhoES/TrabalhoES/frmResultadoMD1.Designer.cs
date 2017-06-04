@@ -77,6 +77,7 @@
             this.Controls.Add(this.pcbMapaConfronto);
             this.Controls.Add(this.pcbMapa);
             this.Controls.Add(this.pcbSair);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmResultadoMD1";
             this.Text = "Mapa do Confronto";

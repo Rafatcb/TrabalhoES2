@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pcbSair = new System.Windows.Forms.PictureBox();
             this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.pcbMD1 = new System.Windows.Forms.PictureBox();
             this.pcbMD3 = new System.Windows.Forms.PictureBox();
             this.pcbMD5 = new System.Windows.Forms.PictureBox();
             this.pcbVoltar = new System.Windows.Forms.PictureBox();
+            this.tmrHide = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbMD1)).BeginInit();
@@ -117,6 +119,11 @@
             this.pcbVoltar.MouseEnter += new System.EventHandler(this.pcbVoltar_MouseEnter);
             this.pcbVoltar.MouseLeave += new System.EventHandler(this.pcbVoltar_MouseLeave);
             // 
+            // tmrHide
+            // 
+            this.tmrHide.Interval = 700;
+            this.tmrHide.Tick += new System.EventHandler(this.tmrHide_Tick);
+            // 
             // frmConfronto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,6 +137,7 @@
             this.Controls.Add(this.pcbMD1);
             this.Controls.Add(this.pcbLogo);
             this.Controls.Add(this.pcbSair);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmConfronto";
             this.Text = "Confronto";
@@ -151,6 +159,7 @@
         private System.Windows.Forms.PictureBox pcbMD3;
         private System.Windows.Forms.PictureBox pcbMD5;
         private System.Windows.Forms.PictureBox pcbVoltar;
+        private System.Windows.Forms.Timer tmrHide;
     }
 }
 

@@ -129,7 +129,7 @@ namespace TrabalhoES
                 frmResultadoMD5 telaResultado = new frmResultadoMD5();
                 telaResultado.Show();
             }
-            this.Hide();
+            tmrHide.Enabled = true;
             tmrEspera.Enabled = false;
         }
         #endregion
@@ -199,14 +199,26 @@ namespace TrabalhoES
         }
         #endregion
 
-        #region Timer
+        #region Timers
         private void tmrVeto_Tick(object sender, EventArgs e)
         {
             tempo--;
             lblTempo.Text = tempo.ToString();
+            if (tempo == 0)
+            {
+                TrocarTime();
+                tempo = 60;
+                lblTempo.Text = "60";
+            }
+        }
+
+        private void tmrHide_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
+            tmrHide.Enabled = false;
         }
         #endregion
-        
+
         #region [CLICK] Sair
         private void pcbSair_Click(object sender, EventArgs e)
         {

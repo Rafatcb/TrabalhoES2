@@ -95,12 +95,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrabalhoES.Properties.Resources.background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.pcbMapa3);
             this.Controls.Add(this.pcbMapa2);
             this.Controls.Add(this.pcbMapa1);
             this.Controls.Add(this.pcbSair);
             this.Controls.Add(this.pcbMapasConfronto);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmResultadoMD3";
             this.Text = "Mapas do Confronto";

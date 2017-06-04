@@ -27,7 +27,6 @@ namespace TrabalhoES
             var result = MessageBox.Show("Você tem certeza que deseja sair?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
             if (result == DialogResult.Yes)
             {
-                Resources.Global.sair = 1;
                 this.Close();
             }
         }
@@ -43,8 +42,9 @@ namespace TrabalhoES
                 Resources.Global.time1 = txtTime1.Text;
                 Resources.Global.time2 = txtTime2.Text;
                 frmConfronto telaConfronto = new frmConfronto();
-                telaConfronto.Show();
-                this.Hide();
+                telaConfronto.MdiParent = this.MdiParent; // Indica o form pai da janela-filho
+                telaConfronto.Show(); // Mostra o novo form
+                tmrHide.Enabled = true;
             }
         }
         #endregion
@@ -84,5 +84,11 @@ namespace TrabalhoES
                 pcbContinuar_Click(sender, e);
         }
         #endregion
+
+        private void tmrHide_Tick(object sender, EventArgs e)
+        {
+            this.Hide();
+            tmrHide.Enabled = false;
+        }
     }
 }

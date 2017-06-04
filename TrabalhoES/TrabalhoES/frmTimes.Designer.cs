@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtTime1 = new System.Windows.Forms.TextBox();
             this.txtTime2 = new System.Windows.Forms.TextBox();
             this.pcbVS = new System.Windows.Forms.PictureBox();
@@ -36,6 +37,7 @@
             this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.pcbTime1 = new System.Windows.Forms.PictureBox();
             this.pcbTime2 = new System.Windows.Forms.PictureBox();
+            this.tmrHide = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbVS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbContinuar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).BeginInit();
@@ -131,6 +133,11 @@
             this.pcbTime2.TabIndex = 12;
             this.pcbTime2.TabStop = false;
             // 
+            // tmrHide
+            // 
+            this.tmrHide.Interval = 700;
+            this.tmrHide.Tick += new System.EventHandler(this.tmrHide_Tick);
+            // 
             // frmTimes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +153,7 @@
             this.Controls.Add(this.pcbVS);
             this.Controls.Add(this.txtTime2);
             this.Controls.Add(this.txtTime1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTimes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -171,6 +179,7 @@
         private System.Windows.Forms.PictureBox pcbLogo;
         private System.Windows.Forms.PictureBox pcbTime1;
         private System.Windows.Forms.PictureBox pcbTime2;
+        private System.Windows.Forms.Timer tmrHide;
     }
 }
 

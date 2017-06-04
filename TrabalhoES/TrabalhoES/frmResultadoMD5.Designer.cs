@@ -126,6 +126,7 @@
             this.Controls.Add(this.pcbMapa1);
             this.Controls.Add(this.pcbSair);
             this.Controls.Add(this.pcbMapasConfronto);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmResultadoMD5";
             this.Text = "Mapas do Confronto";

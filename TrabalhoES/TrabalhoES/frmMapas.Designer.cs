@@ -60,6 +60,7 @@
             this.tmrEspera = new System.Windows.Forms.Timer(this.components);
             this.lblTime1 = new System.Windows.Forms.Label();
             this.lblTime2 = new System.Windows.Forms.Label();
+            this.tmrHide = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pcbSair)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbNuke)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbOverpass)).BeginInit();
@@ -434,6 +435,11 @@
             this.lblTime2.TabIndex = 46;
             this.lblTime2.Text = "TESTE";
             // 
+            // tmrHide
+            // 
+            this.tmrHide.Interval = 700;
+            this.tmrHide.Tick += new System.EventHandler(this.tmrHide_Tick);
+            // 
             // frmMapas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -470,6 +476,7 @@
             this.Controls.Add(this.pcbOverpass);
             this.Controls.Add(this.pcbNuke);
             this.Controls.Add(this.pcbSair);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMapas";
             this.Text = "Mapas";
@@ -538,5 +545,6 @@
         private System.Windows.Forms.Timer tmrEspera;
         private System.Windows.Forms.Label lblTime1;
         private System.Windows.Forms.Label lblTime2;
+        private System.Windows.Forms.Timer tmrHide;
     }
 }
