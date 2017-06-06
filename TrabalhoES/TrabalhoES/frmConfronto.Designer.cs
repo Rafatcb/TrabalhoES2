@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmConfronto));
             this.pcbSair = new System.Windows.Forms.PictureBox();
             this.pcbLogo = new System.Windows.Forms.PictureBox();
             this.pcbMD1 = new System.Windows.Forms.PictureBox();
@@ -121,7 +122,7 @@
             // 
             // tmrHide
             // 
-            this.tmrHide.Interval = 700;
+            this.tmrHide.Interval = 500;
             this.tmrHide.Tick += new System.EventHandler(this.tmrHide_Tick);
             // 
             // frmConfronto
@@ -139,6 +140,7 @@
             this.Controls.Add(this.pcbSair);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmConfronto";
             this.Text = "Confronto";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

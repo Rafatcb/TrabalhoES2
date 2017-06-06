@@ -35,6 +35,13 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -174,6 +181,8 @@
     <None Include="Resources\Texto-Veto62.jpg" />
     <None Include="Resources\Texto-Veto32.jpg" />
     <None Include="Resources\Texto-MapasConfronto.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Resources\favicon.ico" />
     <Content Include="Resources\Texto-VS.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

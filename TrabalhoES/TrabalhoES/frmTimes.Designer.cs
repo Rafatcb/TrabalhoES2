@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTimes));
             this.txtTime1 = new System.Windows.Forms.TextBox();
             this.txtTime2 = new System.Windows.Forms.TextBox();
             this.pcbVS = new System.Windows.Forms.PictureBox();
@@ -135,7 +136,7 @@
             // 
             // tmrHide
             // 
-            this.tmrHide.Interval = 700;
+            this.tmrHide.Interval = 500;
             this.tmrHide.Tick += new System.EventHandler(this.tmrHide_Tick);
             // 
             // frmTimes
@@ -155,6 +156,7 @@
             this.Controls.Add(this.txtTime1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTimes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Times";

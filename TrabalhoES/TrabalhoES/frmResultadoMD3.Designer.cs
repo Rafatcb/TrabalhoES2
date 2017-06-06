@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmResultadoMD3));
             this.pcbMapasConfronto = new System.Windows.Forms.PictureBox();
             this.pcbSair = new System.Windows.Forms.PictureBox();
             this.pcbMapa1 = new System.Windows.Forms.PictureBox();
@@ -104,6 +105,7 @@
             this.Controls.Add(this.pcbMapasConfronto);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmResultadoMD3";
             this.Text = "Mapas do Confronto";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMapas));
             this.pcbSair = new System.Windows.Forms.PictureBox();
             this.pcbNuke = new System.Windows.Forms.PictureBox();
             this.pcbOverpass = new System.Windows.Forms.PictureBox();
@@ -437,7 +438,7 @@
             // 
             // tmrHide
             // 
-            this.tmrHide.Interval = 700;
+            this.tmrHide.Interval = 500;
             this.tmrHide.Tick += new System.EventHandler(this.tmrHide_Tick);
             // 
             // frmMapas
@@ -478,6 +479,7 @@
             this.Controls.Add(this.pcbSair);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMapas";
             this.Text = "Mapas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -31,4 +31,3 @@ C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\Traba
 C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.frmResultadoMD1.resources
 C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.frmResultadoMD3.resources
 C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.frmResultadoMD5.resources
-C:\Users\Rafael\Desktop\Unicamp\SI - 3º Semestre\Engenharia de Software 2\TrabalhoES2\TrabalhoES\TrabalhoES\obj\Debug\TrabalhoES.csprojResolveAssemblyReference.cache
